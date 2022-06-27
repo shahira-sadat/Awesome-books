@@ -1,5 +1,3 @@
-
-
 const booksElement = document.querySelector('.books');
 const titleInput = document.querySelector('.title-input');
 const authorInput = document.querySelector('.author-input');
