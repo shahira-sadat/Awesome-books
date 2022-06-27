@@ -1,14 +1,14 @@
 # Project Name
-Put here the name of project
+Awesome Books
 
-> A description of the project here
+> A basic website that allows users to add/remove books from a list.
 
 ![screenshot]here
 
 
 ## Live Demo
 
-[Live Demo Link](link here)
+[Live Demo Link](https://shahira-sadat.github.io/Awesome-books/)
 
 ## Built With
 - html
@@ -41,7 +41,15 @@ open index.html in your local browser
 - Linkedin: [Shahira Sadat](https://www.linkedin.com/in/shahira-sadat-49b402199)
 - Gmail: shahira.sadat1@gmail.com
 
+
+👤 **Authors**
+Erick Hans Martinez
+
+- GitHub: [@erickhansx](https://github.com/erickhansx)
+- Twitter: [@TheErickHans](https://twitter.com/TheErickHans)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/erick-hans-858382231/)
 ## 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome!
 
 ## Show your support
