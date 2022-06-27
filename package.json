@@ -1,7 +1,7 @@
 {
   "name": "awesome-books",
   "version": "1.0.0",
-  "description": "Put here the name of project",
+  "description": "Awesome Books",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/shahira-sadat/Awesome-books#readme",
   "devDependencies": {
-    "hint": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^7.0.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
