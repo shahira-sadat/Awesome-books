@@ -39,7 +39,7 @@ class Book {
 
   removeBook(bookId) {
     const filterBooks = this.getExistingBooks().filter(
-      (existingBook) => existingBook.id !== bookId
+      (existingBook) => existingBook.id !== bookId,
     );
 
     this.saveToLocalStorage(filterBooks);
@@ -74,12 +74,9 @@ addBookBtn.addEventListener('click', (e) => {
     authorInput.value = '';
   } else {
     e.preventDefault();
-    alert('provide valid input');
   }
 });
 
-Array.from(document.querySelectorAll('.remove-btn')).forEach((btn) =>
-  btn.addEventListener('click', () => {
-    book.removeBook(btn.dataset.id);
-  })
-);
+Array.from(document.querySelectorAll('.remove-btn')).forEach((btn) => btn.addEventListener('click', () => {
+  book.removeBook(btn.dataset.id);
+}));
