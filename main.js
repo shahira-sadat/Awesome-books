@@ -10,62 +10,76 @@ class Book {
     this.booksElement = document.querySelector('.books');
   }
 
-    generateRandomId = () => Math.random().toString(20).substr(2, 20);
+  generateRandomId = () => Math.random().toString(20).substr(2, 20);
 
-    getExistingBooks = () => JSON.parse(localStorage.getItem('books'));
+  getExistingBooks = () => JSON.parse(localStorage.getItem('books'));
 
-    saveToLocalStorage = (books) => {
-      localStorage.setItem('books', JSON.stringify(books));
+  saveToLocalStorage = (books) => {
+    localStorage.setItem('books', JSON.stringify(books));
+  };
+
+  addBooks() {
+    const newBook = {
+      title: this.title,
+      author: this.author,
+      id: this.generateRandomId(),
+    };
+
+    if (this.getExistingBooks()) {
+      this.getExistingBooks().forEach((existingBook) => {
+        this.books.push(existingBook);
+      });
     }
 
-    addBooks() {
-      const newBook = {
-        title: this.title,
-        author: this.author,
-        id: this.generateRandomId(),
-      };
+    this.books.push(newBook);
 
-      if (this.getExistingBooks()) {
-        this.getExistingBooks().forEach((existingBook) => {
-          this.books.push(existingBook);
-        });
-      }
+    this.saveToLocalStorage(this.books);
+    this.books = [];
+  }
 
-      this.books.push(newBook);
+  removeBook(bookId) {
+    const filterBooks = this.getExistingBooks().filter(
+      (existingBook) => existingBook.id !== bookId
+    );
 
-      this.saveToLocalStorage(this.books);
-      this.books = [];
-    }
+    this.saveToLocalStorage(filterBooks);
+    window.location.reload();
+  }
 
-    removeBook(bookId) {
-      const filterBooks = this.getExistingBooks().filter(
-        (existingBook) => existingBook.id !== bookId,
-      );
-
-      this.saveToLocalStorage(filterBooks);
-      window.location.reload();
-    }
-
-    displayBooks() {
-      if (this.getExistingBooks()) {
-        this.getExistingBooks().forEach((book) => {
-          const textHtml = `
+  displayBooks() {
+    if (this.getExistingBooks()) {
+      this.getExistingBooks().forEach((book) => {
+        const textHtml = `
         <div class="book">
         <p class="title">${book.title}</p>
         <p class="author">${book.author}</p>
         <button class="remove-btn" data-id=${book.id}>Remove</button>
         </div>`;
 
-          this.booksElement.insertAdjacentHTML('afterbegin', textHtml);
-        });
-      }
+        this.booksElement.insertAdjacentHTML('afterbegin', textHtml);
+      });
     }
+  }
 }
 
 const book = new Book();
 
 book.displayBooks();
 
-// Array.from(document.querySelectorAll('.remove-btn')).forEach((btn) => btn.addEventListener('click', () => {
-//   removeBook(btn.dataset.id);
-// }));
+addBookBtn.addEventListener('click', (e) => {
+  if (titleInput.value !== '' && authorInput.value !== '') {
+    const book = new Book(titleInput.value, authorInput.value);
+    book.addBooks();
+    titleInput.value = '';
+    authorInput.value = '';
+  } else {
+    e.preventDefault();
+    alert('provide valid input');
+  }
+});
+
+Array.from(document.querySelectorAll('.remove-btn')).forEach((btn) =>
+  btn.addEventListener('click', () => {
+    book.removeBook(btn.dataset.id);
+  })
+);
