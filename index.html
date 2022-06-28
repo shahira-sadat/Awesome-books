@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Books</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <header>
-        <h1>Awesome books</h1>
-    </header>
-    <main>
-        <section class="books">
-            
+  <body>
+    <div class="container">
+      <header>
+        <h1>All awesome books</h1>
+      </header>
+      <main>
+        <section class="books"></section>
+        <hr class="bottom-border" />
+        <section class="form" >
+            <h2>Add a new Book</h2>
+          <form>
+            <input
+              type="text"
+              class="title-input"
+              placeholder="Title"
+            /><br /><br />
+            <input
+              type="text"
+              class="author-input"
+              placeholder="Author"
+            /><br /><br />
+            <button id="addBtn">Add</button>
+          </form>
+
         </section>
-        <section class="form">
-            <form>
-                <input type="text" class="title-input" placeholder="Title" /><br /><br />
-                <input type="text" class="author-input" placeholder="Author" /><br /><br />
-                <button id="addBtn">Add</button>
-            </form>
-        </section>
-    </main>
+      </main>
+    </div>
     <script src="main.js" defer></script>
-</body>
-
+  </body>
 </html>
