@@ -1,3 +1,37 @@
 * {
-  margin: 5px;
+  margin: 0px;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.books {
+  margin: 0 auto;
+  max-width: 700px;
+  border: 1px grey solid;
+  margin-bottom: 20px;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+}
+
+.book:nth-child(odd) {
+  background-color: rgb(207, 207, 207);
+}
+
+.remove-btn {
+  margin-left: auto;
+  padding: 10px;
+  background-color: red;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
 }
