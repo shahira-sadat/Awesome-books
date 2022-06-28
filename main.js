@@ -49,7 +49,6 @@ const displayBooks = () => {
       <p class="title">${book.title}</p>
       <p class="author">${book.author}</p>
       <button class="remove-btn" data-id=${book.id}>Remove</button>
-      <hr class="bottom-border" />
       </div>`;
 
       booksElement.insertAdjacentHTML('afterbegin', textHtml);
