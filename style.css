@@ -4,7 +4,7 @@
 
 .container {
   text-align: center;
-  /* padding: 20px; */
+  padding: 20px;
 }
 
 .books {
@@ -82,33 +82,37 @@ input[type="text"] {
   border: 1px solid gray;
 }
 
-.contact{
-    /* display: none; */
-    flex-direction: column;
-    align-items: center;
+.contact {
+  /* display: none; */
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact .h1{
-    margin-bottom: 30px;
+.contact .h1 {
+  margin-bottom: 30px;
 }
 
 .contact .contact-text {
-    letter-spacing: 1px;
-    line-height: 20px;
-    margin-bottom: 10px;
-    
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
-.contact .contact-items{
-    margin-bottom: 5px; 
+.contact .contact-items {
+  margin-bottom: 5px;
 }
 
-.copyright{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto 0 auto;
-    border: 2px solid black;
-    padding: 15px 0 15px 10px;
-    width: 100%;
-    
+.copyright {
+  margin: 0 auto 0 auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  width: 95%;
+  bottom: 0;
+  height: 10vh;
 }
+
+
