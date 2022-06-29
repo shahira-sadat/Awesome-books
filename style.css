@@ -4,7 +4,7 @@
 
 .container {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .books {
@@ -80,4 +80,35 @@ input[type="text"] {
   color: rgb(15, 221, 15);
   background: #fff;
   border: 1px solid gray;
+}
+
+.contact{
+    /* display: none; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .h1{
+    margin-bottom: 30px;
+}
+
+.contact .contact-text {
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.contact .contact-items{
+    margin-bottom: 5px; 
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+    border: 2px solid black;
+    padding: 15px 0 15px 10px;
+    width: 100%;
+    
 }
