@@ -47,7 +47,7 @@ class Book {
 
   removeBook(bookId) {
     const filterBooks = this.getExistingBooks().filter(
-      (existingBook) => existingBook.id !== bookId
+      (existingBook) => existingBook.id !== bookId,
     );
 
     this.saveToLocalStorage(filterBooks);
@@ -85,11 +85,9 @@ addBookBtn.addEventListener('click', (e) => {
   }
 });
 
-Array.from(document.querySelectorAll('.remove-btn')).forEach((btn) =>
-  btn.addEventListener('click', () => {
-    book.removeBook(btn.dataset.id);
-  })
-);
+Array.from(document.querySelectorAll('.remove-btn')).forEach((btn) => btn.addEventListener('click', () => {
+  book.removeBook(btn.dataset.id);
+}));
 
 showFormNavButton.addEventListener('click', () => {
   bookForm.style.display = 'block';
@@ -125,7 +123,7 @@ showContactNavButton.addEventListener('click', () => {
 const date = new Date();
 const n = date.toDateString();
 const time = date.toLocaleTimeString();
-const datetime = n + ' ' + time;
+const datetime = `${n} ${time}`;
 
 timeNow.innerHTML = `${datetime}`;
 setInterval(() => {
