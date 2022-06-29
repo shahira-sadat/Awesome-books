@@ -3,7 +3,8 @@ Awesome Books
 
 > A basic website that allows users to add/remove books from a list.
 
-<img width="1006" alt="Screen Shot 2022-06-29 at 12 23 51 AM" src="https://user-images.githubusercontent.com/53530780/176272087-ceb4135f-d924-4cbc-a85b-ca4fd50518b7.png">
+<img width="1433" alt="Screen Shot 2022-06-30 at 3 49 27 AM" src="https://user-images.githubusercontent.com/53530780/176561003-2c3c0ee7-40c1-441c-98f7-bde3ddfc5471.png">
+
 
 
 ## Live Demo
