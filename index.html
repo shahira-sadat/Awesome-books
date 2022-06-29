@@ -11,13 +11,33 @@
   <body>
     <div class="container">
       <header>
-        <h1>All awesome books</h1>
+        <nav class="main-nav">
+          <div>
+            <p class="logo">Awesome Books</p>
+          </div>
+          <div>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="triggerBookDisplay">list</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="triggerBookForm">Add New</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="triggerContact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
       <main>
-        <section class="books"></section>
-        <hr class="bottom-border" />
-        <section class="form" >
-            <h2>Add a new Book</h2>
+        <span class="time-now"></span>
+        <section class="books-container">
+          <h1 class="h1 home">All Awesome Books</h1>
+          <div class="books"></div>
+        </section>
+        <section class="form">
+          <h2>Add a new Book</h2>
           <form>
             <input
               type="text"
@@ -31,9 +51,26 @@
             /><br /><br />
             <button id="addBtn">Add</button>
           </form>
-
+        </section>
+        <section class="contact">
+          <h1 class="h1 contact-title">Contact Information</h1>
+          <p class="contact-text">
+            Do you have any questions or you just want to say hello?<br />
+            You can reach out to us!
+          </p>
+          <ul class="contact-list">
+            <li class="contact-item">our Email: mail@mail.com</li>
+            <li class="contact-item">our Phone number: 00043586534422</li>
+            <li class="contact-item">
+              Our Address: Streetname22, City, Country
+            </li>
+          </ul>
         </section>
       </main>
+      <footer class="copyright">
+        <p class="copyright-text">Copyright</p>
+        <p class="copyrifht-links">Erick - Shahira</p>
+      </footer>
     </div>
     <script src="main.js" defer></script>
   </body>

@@ -3,15 +3,83 @@
 }
 
 .container {
-  text-align: center;
+  /* text-align: center; */
   padding: 20px;
+  padding: 0 20px 10px 20px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  padding: 5px 15px;
+  border-right: 2px solid black;
+}
+
+.nav-item:last-child {
+  border-right: none;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  border-bottom: 2px solid rgb(27, 27, 189);
+}
+
+header {
+  margin-bottom: 20px;
+  height: 10vh;
+  text-align: center;
+}
+
+.h1 {
+  font-size: 40px;
+}
+
+.main {
+  text-align: center;
+  min-height: 330px;
+  height: 75vh;
+  position: relative;
+}
+
+.time-now {
+  position: relative;
+  left: 82vw;
 }
 
 .books {
-  margin: 0 auto;
+  text-align: center;
+  margin: 0 auto 20px;
   max-width: 700px;
   border: 1px grey solid;
-  margin-bottom: 20px;
+  transition: transform 1s ease-out, opacity 0.2s ease-out;
 }
 
 .book {
@@ -46,20 +114,22 @@
   width: 300px;
   border-top: 4px solid black;
   border-radius: 10px;
-  margin: 30px auto 30px auto;
+  margin: 30px auto;
 }
 
 .form {
+  text-align: center;
   width: 40%;
   margin: 0 auto;
   padding: 2%;
+  display: none;
 }
 
 h2 {
-  margin: 0 auto 20px auto;
+  margin: 0 auto 20px;
 }
 
-input[type="text"] {
+input[type='text'] {
   width: 50%;
   padding: 8px;
 }
@@ -80,4 +150,46 @@ input[type="text"] {
   color: rgb(15, 221, 15);
   background: #fff;
   border: 1px solid gray;
+}
+
+.contact {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .h1 {
+  margin-bottom: 30px;
+}
+
+.contact .contact-text {
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.contact .contact-items {
+  margin-bottom: 5px;
+  text-align: start;
+}
+
+.copyright {
+  margin: auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+.copyright-text,
+.copyrifht-links {
+  padding: 5px 20px 5px 20px;
 }
