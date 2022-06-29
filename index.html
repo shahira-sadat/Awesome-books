@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Books</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container">
-      <header>
-        <h1>All awesome books</h1>
-      </header>
-      <main>
-        <section class="books"></section>
-        <hr class="bottom-border" />
-        <section class="form" >
-            <h2>Add a new Book</h2>
-          <form>
-            <input
-              type="text"
-              class="title-input"
-              placeholder="Title"
-            /><br /><br />
-            <input
-              type="text"
-              class="author-input"
-              placeholder="Author"
-            /><br /><br />
-            <button id="addBtn">Add</button>
-          </form>
-
-        </section>
-      </main>
+        <header>
+            <nav class="main-nav">
+                <div>
+                    <p class="logo">
+                        Awesome Books
+                    </p>
+                </div>
+                <div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="triggerBookDisplay">list</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="triggerBookForm">Add New</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="triggerContact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <h1>All awesome books</h1>
+        </header>
+        <main>
+            <span class="time-now"></span>
+            <section class="books-container">
+                <h1 class="h1 home">All Awesome Books</h1>
+                <div class="books"></div>
+                <hr class="bottom-border" />
+            </section>
+            <section class="form">
+                <h2>Add a new Book</h2>
+                <form>
+                    <input type="text" class="title-input" placeholder="Title" /><br /><br />
+                    <input type="text" class="author-input" placeholder="Author" /><br /><br />
+                    <button id="addBtn">Add</button>
+                </form>
+            </section>
+        </main>
     </div>
     <script src="main.js" defer></script>
-  </body>
+</body>
+
 </html>
