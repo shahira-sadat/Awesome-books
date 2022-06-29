@@ -89,34 +89,34 @@ Array.from(document.querySelectorAll('.remove-btn')).forEach((btn) => btn.addEve
   book.removeBook(btn.dataset.id);
 }));
 
-
 showFormNavButton.addEventListener('click', () => {
-    bookForm.style.display = 'block';
-    booksContainer.style.display = 'none';
-    homepageTitle.style.display = 'none';
-    contact.style.display = 'none';
-    showFormNavButton.classList.add('active');
-    showBookNavButton.classList.remove('active');
-    showContactNavButton.classList.remove('active');
+  bookForm.style.display = 'block';
+  booksContainer.style.display = 'none';
+  homepageTitle.style.display = 'none';
+  contact.style.display = 'none';
+  showFormNavButton.classList.add('active');
+  showBookNavButton.classList.remove('active');
+  showContactNavButton.classList.remove('active');
 });
 
 showBookNavButton.addEventListener('click', () => {
-    window.location.reload();
-    bookForm.style.display = 'none';
-    booksContainer.style.display = 'block';
-    homepageTitle.style.display = 'block';
-    contact.style.display = 'none';
-    showFormNavButton.classList.remove('active');
-    showContactNavButton.classList.remove('active');
-    showBookNavButton.classList.add('active');
+  window.location.reload();
+  bookForm.style.display = 'none';
+  booksContainer.style.display = 'block';
+  homepageTitle.style.display = 'block';
+  contact.style.display = 'none';
+  showFormNavButton.classList.remove('active');
+  showContactNavButton.classList.remove('active');
+  showBookNavButton.classList.add('active');
 });
 
 showContactNavButton.addEventListener('click', () => {
-    contact.style.display = 'flex';
-    booksContainer.style.display = 'none';
-    homepageTitle.style.display = 'none';
-    bookForm.style.display = 'none';
-    showContactNavButton.classList.add('active');
-    showFormNavButton.classList.remove('active');
-    showBookNavButton.classList.remove('active');
+  contact.style.display = 'flex';
+  booksContainer.style.display = 'none';
+  homepageTitle.style.display = 'none';
+  bookForm.style.display = 'none';
+  showContactNavButton.classList.add('active');
+  showFormNavButton.classList.remove('active');
+  showBookNavButton.classList.remove('active');
 });
+

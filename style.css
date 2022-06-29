@@ -13,6 +13,7 @@
 .container h1 {
   text-align: center;
 }
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -63,7 +64,6 @@ header {
 
 .main {
   text-align: center;
-
   min-height: 330px;
   height: 75vh;
   position: relative;
@@ -71,7 +71,6 @@ header {
 
 .time-now {
   position: relative;
-
   left: 82vw;
 }
 
